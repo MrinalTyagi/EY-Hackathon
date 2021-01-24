@@ -15,5 +15,5 @@ scikitlearn
 geopandas latest version 0.8.0
 matplotlib 3.3.3
 numpy 1.19.5
-
+pandas 1.2.1
 

@@ -9,7 +9,7 @@ stock of vaccination supply should be provided.
 
 DEPENDECIES :
 Bootstrap 4.4, HTML5, CSS3, JavaScript ES6, NodeJS 14.15.4
-MongoDB 4.4.3
+Local MongoDB 4.4.3
 Stable release: 0.23.2
 scikitlearn
 geopandas latest version 0.8.0

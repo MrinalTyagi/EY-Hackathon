@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/success.css" />
+  </head>
+  <body>
+    <!-- <div class="rectangle" style="height: 20rem; width: 20rem;"> -->
+      <div class="success-checkmark">
+        <div class="check-icon">
+          <span class="icon-line line-tip"></span>
+          <span class="icon-line line-long"></span>
+          <div class="icon-circle"></div>
+          <div class="icon-fix"></div>
+        </div>
+      </div>
+    
+      <center>
+        <!-- <button
+          id="restart"
+          style="
+            color: transparent;
+            background-color: transparent;
+            border: none;
+            border-color: transparent;
+            cursor: default;
+          "
+        >
+          Restart Animation
+         -->
+      </center>
+    </div>
+    <script>
+      const btn = document.getElementById("restart");
+      btn.addEventListener("click", function () {
+        document.querySelector(".check-icon").style.display = "none";
+        setTimeout(function () {
+          document.querySelector(".check-icon").style.display = "block";
+        }, 10);
+      });
+    </script>
+    </div>
+  </body>
+</html>

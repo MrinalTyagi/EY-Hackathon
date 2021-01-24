@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+
+  <body>
+    <header class="index__header">
+      <img src="../img/logo_main.png" class="logo-main" alt="" />
+      <div class="dropdown">
+        <a class="dropdown-item--1" href="#exampleModal2" data-toggle="modal"
+            >
+        <button
+          class="btn btn-secondary btn__index-header"
+          type="button"
+          id="dropdownMenuButton"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Login
+        </button>
+        </a
+          >
+      </div>
+    </header>
+
+    <main class="main__index">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h2 class="main-heading">
+              <span class="main-heading-primary">
+                Easy Solution to <br />
+                
+              </span>
+              <span class="main-heading-secondary">
+                Prioritize Vaccine Delivery
+              </span>
+            </h2>
+
+            <p class="main-para">
+              Help save lives & reduce the chain of transmission with <br />
+              with AI-enabled prioritization of Vaccine Delivery.<br />
+              <u> Register below</u> for Priority List.
+            </p>
+            <button
+              type="button"
+              class="btn btn btn-light btn__index-main"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+             REGISTER
+            </button>
+
+            <div
+              class="modal fade modal__fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal__dialog" role="document">
+                <div class="modal-content modal__content">
+                  <div class="modal-header modal-header-register">
+                    <h5 class="modal-title modal__title" id="exampleModalLabel">
+                      Register here!
+                    </h5>
+
+                    <p class="modal-title-secondary">
+                      <br />
+                      <br />
+                      Kindly fill in your Sign Up details to proceed
+                    </p>
+                    <button
+                      type="button"
+                      class="modal-close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/register" method="POST">
+                      <div class="form-row form__row-register">
+                        <div class="form-group col-md-6 signup-fname">
+                          <input
+                            type="text"
+                            name="FirstName"
+                            class="form-control form-control--fname"
+                            id="First-Name"
+                            placeholder=" First Name"
+                            required
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input
+                            type="text"
+                            name="LastName"
+                            class="form-control form-control--lname"
+                            id="Last-Name"
+                            placeholder=" Last Name"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="EmailAddress"
+                          class="form-control form-control--email"
+                          id="inputemail"
+                          placeholder=" abc@gmail.com"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          name="Password"
+                          class="form-control form-control--pass"
+                          id="inputpsw"
+                          placeholder=" Password"
+                          required
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="Address"
+                          class="form-control form-control--pass"
+                          id="inputAddress"
+                          placeholder=" Enter your address here"
+                          required
+                        />
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4 form__end">
+                          <input
+                            type="text"
+                            name="PhoneNumber"
+                            class="form-control form__end-item"
+                            id="inputPhoneNo"
+                            placeholder=" Phone Number"
+                            required
+                          />
+                        </div>
+                        <div class="form-group col-md-3 end-group">
+                          <input
+                            type="text"
+                            name="PanCardNumber"
+                            class="form-control form__end-item form__end-item--1"
+                            id="inputpan"
+                            placeholder=" Pan Card Number"
+                            required
+                          />
+                        </div>
+                        <div class="form-group col-md-3 end-group">
+                          <input
+                            type="text"
+                            name="AadharCardNumber"
+                            class="form-control form__end-item form__end-item--1"
+                            id="inputAadhar"
+                            placeholder=" Aadhar Card Number"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group form-group-button">
+                        <a href="../pages/dashboard.html" class=""></a>
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-signin__next"
+                        >
+                          REGISTER
+                        </button>
+                      </div>
+
+                      <p class="signin-info">
+                        <span class="Signup-logprimary"
+                          >Already have an account?
+                        </span>
+                        <span class="Signup-logsecondary">Login</span>
+                      </p>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 main-img">
+            <img src="../img/Group-10.png" class="main-img-1" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- <div
+        class="modal fade modal__fade"
+        id="exampleModal1"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal__content-1">
+            <div class="modal-header">
+              <h5
+                class="modal-title login-title-primary"
+                id="exampleModalLabel2"
+              >
+                Welcome Back, Admin!
+              </h5>
+              <p class="login-title-secondary">
+                <br />
+                <br />
+                Kindly fill in your login details to proceed
+              </p>
+              <button
+                type="button"
+                class="close close-admin"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control form-control--email form-login-email"
+                  id="inputemail"
+                  placeholder=" Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control form-control--pass form-login-pass"
+                  id="inputpsw"
+                  placeholder=" Password"
+                  required
+                />
+              </div>
+              <p class="login-admin-forpass">forgot password?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-login">
+                LOGIN
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div
+        class="modal fade modal__fade"
+        id="exampleModal2"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal__content-1">
+            <div class="modal-header">
+              <h5
+                class="modal-title login-title-primary2"
+                id="exampleModalLabel1"
+              >
+                Welcome Back!
+              </h5>
+              <p class="login-title-secondary2">
+                <br />
+                <br />
+                Kindly fill in your login details to proceed
+              </p>
+              <button
+                type="button"
+                class="close close-patient"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="/login" method="POST">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="EmailAddress"
+                    class="form-control form-control--email form-login-email"
+                    id="inputemail"
+                    placeholder=" Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    name="Password"
+                    class="form-control form-control--pass form-login-pass"
+                    id="inputpsw"
+                    placeholder=" Password"
+                    required
+                  />
+                </div>
+                <p class="login-patient-forpass">forgot password?</p>
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <button type="submit" class="btn btn-primary btn-login-sec" >
+                        
+                        LOGIN
+                      </button>
+                    
+                    </div>
+                </form>
+            <p>
+              <span class="noacc-pri">Don’t have an account yet?</span>
+              <span class="noacc-sec"> Sign Up</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

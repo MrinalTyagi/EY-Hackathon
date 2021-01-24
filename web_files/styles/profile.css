@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.container-fluid--header {
+  background-color: rgb(237, 240, 237);
+  margin-top: -0.05rem !important;
+  padding-top: 0 !important;
+  height: 6rem;
+  margin-bottom: 2rem;
+}
+
+.container-fluid {
+  width: 100%;
+  display: flex;
+  margin-top: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__side-menu {
+  width: 9rem;
+}
+
+.form__search-text {
+  height: 2.5rem;
+  border-radius: 10rem;
+  padding-bottom: 0.6rem;
+  font-weight: 500;
+  border: 1px solid rgba(111, 64, 199, 0.9);
+  outline: none;
+}
+
+.form__search-text:focus {
+  border-color: rgba(111, 64, 199, 0.9) !important;
+  box-shadow: none;
+}
+
+.form__search-text::placeholder {
+  background-image: linear-gradient(
+    180deg,
+    rgb(253, 116, 155),
+    rgb(40, 26, 200)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn__search {
+  border-radius: 10rem;
+  border: 1px solid rgba(111, 64, 199, 0.9);
+  background-image: linear-gradient(
+    180deg,
+    rgb(253, 116, 155),
+    rgb(40, 26, 200)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.5s ease-out;
+  padding: 0.4rem;
+  width: 5rem;
+  font-weight: 600;
+}
+
+.btn__search:focus {
+  outline-color: rgba(111, 64, 199, 0.9) !important;
+  box-shadow: none;
+}
+
+.btn__search:hover {
+  background: rgba(111, 64, 199, 0.9);
+  color: white;
+  border: none;
+}
+
+.row__main {
+  width: 90%;
+  margin-left: 10%;
+}
+
+.column-1 {
+  width: 50%;
+}
+
+.image__uploader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.image__container {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.avatar-img {
+  /* position: absolute; */
+  /* left: 14%;
+    top: 30%; */
+  /* transform: translate(-50%, -85%); */
+  border-radius: 100%;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.image__file {
+  display: inline-block;
+}
+
+.right__container-button {
+  display: inline-block;
+  margin-left: 3rem;
+  margin-top: -5rem;
+}
+
+.image__file label {
+  z-index: 1000;
+  background-color: indigo;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  height: 2rem;
+  padding-top: 0.5%;
+  background: linear-gradient(
+    180deg,
+    rgba(253, 116, 155, 0.8),
+    rgba(40, 26, 200, 0.8)
+  );
+  background: white;
+  color: black;
+  border: none;
+  font-weight: 700;
+  border: 2px solid rgba(0, 0, 0, 0.329);
+  transition: all 0.5s ease-out;
+}
+
+.image__file:hover label {
+  background: rgba(111, 64, 199, 0.9);
+  color: white;
+  border-color: rgba(111, 64, 199, 0.9);
+}
+
+.btn-profile-edit {
+  border: 2px solid rgba(0, 0, 0, 0.329) !important;
+  color: black !important;
+  background-color: white !important;
+  font-weight: 700;
+
+  font-size: 1rem;
+  height: 2rem;
+  padding-top: 0.2%;
+  transition: all 0.5s ease-out;
+  margin-top: -0.2rem;
+}
+
+.btn-profile-edit:hover {
+  background: rgba(111, 64, 199, 0.9) !important;
+  color: white !important;
+  border-color: rgba(111, 64, 199, 0.9) !important;
+}
+
+.btn-profile-edit:focus {
+  outline-color: rgba(111, 64, 199, 0.9) !important;
+  box-shadow: none;
+}
+
+.btn-profile-edit:visited {
+  background-color: white !important;
+  color: black !important;
+}
+
+.report__containers {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3.5rem;
+}
+
+.report__symptoms {
+  width: 8rem;
+
+  background: linear-gradient(
+    to right top,
+    rgba(186, 104, 200, 0.7) 0%,
+    rgba(40, 26, 200, 0.9) 70%
+  );
+  margin: 0 4rem 0 0;
+  text-align: center;
+  border-radius: 0.8rem;
+  height: 9rem;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.report__test-report {
+  width: 8rem;
+  margin-left: 3rem;
+
+  background: linear-gradient(
+    to right top,
+    rgba(186, 104, 200, 0.7) 0%,
+    rgba(40, 26, 200, 0.9) 70%
+  );
+  text-align: center;
+  border-radius: 0.8rem;
+  height: 9rem;
+  color: white;
+  font-size: 1.2rem;
+  word-spacing: 4rem;
+  transition: all 0.2s;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.report__test-report:hover,
+.report__symptoms:hover {
+  transform: translate(0.1rem, -0.6rem) scale(1.05);
+}
+
+.report__test-report:active,
+.report__symptoms:active {
+  transform: translate(0rem, 0rem);
+}
+
+.plus {
+  margin: 1.5rem auto 0.6rem auto;
+  height: 2.2rem;
+  color: white;
+}
+
+.basic {
+  /* position: absolute;
+  top: 11rem;
+  left: 0rem; */
+  width: 100%;
+  height: 30vh;
+  display: block;
+}
+.details {
+  width: 100%;
+}
+
+.basic .heading,
+.details .heading {
+  font-size: 2rem;
+  width: 80%;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+.details .heading {
+  padding-top: 1.3rem;
+  font-size: 2rem;
+  height: 4rem;
+  color: rgb(55, 55, 55);
+  border-bottom: 3px solid rgba(128, 128, 128, 0.3);
+  border-radius: 1px;
+}
+
+.clean-hands,
+.facemask,
+.face-touch,
+.close-contact {
+  display: block;
+}
+.hands-img,
+.facemask-img,
+.face-img,
+.marke-img {
+  float: left;
+}
+
+.hands-img::after,
+..facemask-img::after,
+.face-img::after,
+.marke-img::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clean-hands {
+  margin-top: 1rem;
+}
+.facemask,
+.face-touch,
+.close-contact {
+  margin-top: 3rem;
+}
+
+.close-contact {
+  margin-bottom: 2rem;
+  overflow-y: auto;
+}
+
+.hand-heading-pri,
+.hand-heading-sec {
+  width: 70%;
+  margin-left: 5.5rem;
+}
+.hand-heading-sec {
+  font-size: 1rem;
+  color: grey;
+  width: 55%;
+}
+.hand-heading-pri {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgb(55, 55, 55);
+}
+
+.form-group {
+  margin-top: 2rem;
+  position: relative;
+  height: 2rem;
+  width: 75%;
+}
+
+.col-form__label {
+  display: block;
+  top: 0;
+  margin-bottom: 0rem;
+  position: absolute;
+  max-width: 10rem !important;
+  height: 2rem;
+}
+.form__control {
+  position: absolute;
+  top: 1.4rem;
+  height: 1.5rem;
+}
+
+.edit__field {
+  position: absolute;
+  top: 0.45rem;
+  right: 3.5rem;
+}

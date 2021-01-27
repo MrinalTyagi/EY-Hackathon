@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="../styles/profile.css" />
+  </head>
+  <body>
+    <div class="container-fluid container-fluid--header">
+      <div class="image">
+        <img class="logo__side-menu" src="../img/covact.png" alt="" />
+      </div>
+      <div class="form__search">
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2 form__search-text"
+            type="search"
+            placeholder=" Search"
+            aria-label="Search"
+          />
+          <button class="btn my-2 my-sm-0 btn__search" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-fluid container-fluid__main">
+      <div class="row row__main">
+        <div class="col column-1">
+          <div class="report__containers">
+            <input type="file" id="actual-btn1" hidden />
+            <label for="actual-btn1" class="report__symptoms"
+              ><span data-feather="plus" class="plus" style="width: 5rem"></span
+              ><br />Report Symptoms
+            </label>
+            <input type="file" id="actual-btn2" hidden />
+
+            <label for="actual-btn2" class="report__test-report">
+              <span data-feather="plus" class="plus" style="width: 5rem"></span
+              ><br />
+              Test Report
+            </label>
+          </div>
+
+          <div class="basic">
+            <div class="heading">
+              Basic protective measures against novel coronavirus
+            </div>
+            <div class="prev-measures">
+              <div class="clean-hands">
+                <img class="hands-img" src="../img/Frame_3.png" alt="" />
+                <h6 class="hand-heading-pri">Clean your hands often</h6>
+                <p class="hand-heading-sec">
+                  Wash hands often with soap and water for atleast 20s.
+                </p>
+              </div>
+              <div class="facemask">
+                <img class="facemask-img" src="../img/Frame_2.png" alt="" />
+                <h6 class="hand-heading-pri">Wear a facemask</h6>
+                <p class="hand-heading-sec">
+                  You should wear facemask when you are around other people.
+                </p>
+              </div>
+              <div class="face-touch">
+                <img class="face-img" src="../img/Frame_5.png" alt="" />
+                <h6 class="hand-heading-pri">Avoid touching your face</h6>
+                <p class="hand-heading-sec">
+                  Hands touch many surfaces and can pick up viruses.
+                </p>
+              </div>
+              <div class="close-contact">
+                <img class="marke-img" src="../img/Frame_4.png" alt="" />
+                <h6 class="hand-heading-pri">Avoid close contact</h6>
+                <p class="hand-heading-sec">
+                  Put distance between yourself and other people.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col column-1">
+          <div class="image__uploader">
+            <div class="image__uploader image__container">
+              <img
+                class="avatar-img"
+                src="https://www.w3schools.com/howto/img_avatar2.png"
+                alt="Avatar"
+              />
+              <h3 class="user__name">UserName</h3>
+            </div>
+
+            <div class="right__container-button">
+              <div class="image__uploader image__file">
+                <input type="file" id="actual-btn" hidden />
+                <label for="actual-btn">Change Profile Picture</label>
+              </div>
+              <!-- <button type="button" class="btn btn-primary btn-profile-edit">
+                Edit Profile
+              </button> -->
+            </div>
+          </div>
+
+          <div class="details">
+            <div class="heading">Details</div>
+            <div class="edit__Details">
+              <form class="edit">
+                <div class="form-group row">
+                  <label
+                    for="inputName"
+                    class="col-sm-2 col-form-label col-form__label"
+                    >Name</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control form__control form-control__name"
+                      id="inputName"
+                    />
+                  </div>
+                  <a href="#inputName" class="edit__field">Edit</a>
+                </div>
+
+                <div class="form-group row">
+                  <label
+                    for="inputPhoneNo"
+                    class="col-sm-2 col-form-label col-form__label"
+                    >Phone</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control form__control form-control__phone"
+                      id="inputPhoneNo"
+                    />
+                  </div>
+                  <a href="#inputPhoneNo" class="edit__field">Edit</a>
+                </div>
+
+                <div class="form-group row">
+                  <label
+                    for="inputEmail3"
+                    class="col-sm-2 col-form-label col-form__label"
+                    >Email ID</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="email"
+                      class="form-control form__control form-control__email"
+                      id="inputEmail3"
+                    />
+                  </div>
+                  <a href="#inputEmail3" class="edit__field">Edit</a>
+                </div>
+
+                <div class="form-group row">
+                  <label
+                    for="inputPassword3"
+                    class="col-sm-2 col-form-label col-form__label"
+                    >Password</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="password"
+                      class="form-control form__control form-control__pass"
+                      id="inputPassword3"
+                    />
+                  </div>
+                  <a href="#inputPassword3" class="edit__field">Edit</a>
+                </div>
+
+                <div class="form-group row">
+                  <label
+                    for="inputAddress"
+                    class="col-sm-2 col-form-label col-form__label"
+                    >Address</label
+                  >
+
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control form__control form-control__address"
+                      id="inputAddress"
+                    />
+                  </div>
+                  <a href="#inputAddress" class="edit__field">Edit</a>
+                </div>
+
+                <div class="form-group row">
+                  <label
+                    for="inputPanNumber"
+                    class="col-sm-2 col-form-label col-form__label"
+                    >Pan Card Number</label
+                  >
+
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control form__control form-control__pan"
+                      id="inputPanNumber"
+                    />
+                  </div>
+                  <a href="#inputPanNumber" class="edit__field">Edit</a>
+                </div>
+
+                <div class="form-group row">
+                  <label
+                    for="inputAadharNumber"
+                    class="col-sm-2 col-form-label col-form__label"
+                    >Aadhar Card Number</label
+                  >
+
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control form-control__aadhar form__control"
+                      id="inputAadharNumber"
+                    />
+                  </div>
+                  <a href="#inputAadharNumber" class="edit__field">Edit</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      //  let aadhar = document.querySelector(".form-control__aadhar");
+      //  let pan =document.querySelector(".form-control__pan");
+      //  let address =document.querySelector(".form-control__address");
+      //  let pass = document.querySelector(".form-control__pass");
+      //  let email = document.querySelector(".form-control__email");
+      //  let phone = document.querySelector(".form-control__phone");
+      //  let name =document.querySelector(".form-control__name");
+
+      //  name.disabled = true;
+      //  address.disabled = true;
+      //  phone.disabled = true;
+      //  email.disabled = true;
+      //  pass.disabled = true;
+      //  pan.disabled = true;
+      //  aadhar.disabled = true;
+
+      let control = document.querySelectorAll(".form__control");
+      for (let i = 0; i < control.length; i++) {
+        control[i].disabled = true;
+      }
+
+      //  const enable = () => {
+      //   console.log(form[i].textContent);
+      //  }
+
+      let form = document.querySelectorAll(".edit__field");
+
+      let prev = 0;
+
+      for (let i = 0; i < form.length; i++) {
+        form[i].addEventListener("click", function () {
+          if (control[i].disabled === true) {
+            control[prev].disabled = true;
+            control[i].disabled = false;
+          } else {
+            control[i].disabled = true;
+          }
+          prev = i;
+        });
+      }
+
+      //  for(let i=0; i<form.length; i++){
+      //    form[i].addEventListener('click', function(){
+      //     if(i === 0){
+      //       name.disabled = false;
+      //     } else if(i === 1){
+      //       address.disabled = false;
+      //     } else if(i === 2){
+      //       address.disabled = false;
+      //     } else if(i === 3){
+      //       address.disabled = false;
+      //     } else if(i === 4){
+      //       address.disabled = false;
+      //     } else if(i === 5){
+      //       address.disabled = false;
+      //     } else if(i === 6){
+      //       address.disabled = false;
+      //     }
+
+      //    });
+      //  }
+    </script>
+
+    <!-- <script src="../script.js"></script> -->
+    <script>
+      feather.replace();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

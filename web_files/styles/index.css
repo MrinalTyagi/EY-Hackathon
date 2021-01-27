@@ -219,7 +219,7 @@ html {
   font-size: 3.5rem;
   font-weight: 650;
   margin-top: 2rem;
-  transform: translateX(52%);
+  transform: translateX(58%);
   display: block;
   width: 100%;
   text-align: center;
@@ -230,7 +230,7 @@ html {
   width: 100%;
   font-size: 1.5rem;
   margin-top: 4rem;
-  transform: translateX(-48%);
+  transform: translateX(-45%);
   text-align: center;
   white-space: nowrap;
 }
@@ -488,4 +488,8 @@ html {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+}
+
+.btn-final {
+  padding-top: 1rem;
 }

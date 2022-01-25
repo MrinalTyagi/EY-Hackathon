@@ -1,5 +1,7 @@
+# EY Techathon 2021
+
 EY Hackathon Project
-Vaccine Delivery System
+Vaccine Delivery System - COVACT
 This was achieved by implementing clustering algorithm over a database of 185 features and using 6 most important ones for the same.
 This highlights important districts based on the Number of Confirmed Cases, Number of Deaths(Fatality Rate),Total Population, Total Working Population,
 Literacy Rate and Percentage of people using public washroom of that district. The clustering algorithm will help in recognizing the important districts in which more 
